@@ -10,5 +10,8 @@
   "license": "MIT License",
   "bugs": {
     "url": "https://github.com/flrngel/pikachu/issues"
+  },
+  "devDependencies": {
+    "express": "~3.4.8"
   }
 }
