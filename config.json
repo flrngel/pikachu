@@ -1,6 +1,7 @@
 {
 	"port": "7017",
 	"gits": [{
-		"name": "test"
+		"name": "test",
+		"dir": "/home/flrngel/pikachu-test/"
 	}]
 }
