@@ -3,9 +3,11 @@ var app=express();
 
 var config=require('./config.json');
 
+app.use(express.bodyParser());
+
 for( i in config.gits ){
 	app.all('/'+config.gits[i].name,function(req,res){
-		res.send('pika pika');
+		res.send("pikachu");
 	});
 };
 
