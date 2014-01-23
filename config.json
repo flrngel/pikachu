@@ -2,6 +2,7 @@
 	"port": "7017",
 	"gits": [{
 		"name": "test",
-		"dir": "/home/flrngel/pikachu-test/"
+		"dir": "/home/flrngel/pikachu-test/",
+		"branch": "master"
 	}]
 }

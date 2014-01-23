@@ -8,12 +8,9 @@ app.use(express.bodyParser());
 
 for( i in config.gits ){
 	app.all('/'+config.gits[i].name,function(req,res){
-		exec('git pull origin master',
-				 {cwd: config.gits[i].dir},
-				 function(error, stdout, stderr){
-					 console.log( {error: error, stdout: stdout, stderr: stderr } );
-				 }
-				);
+		exec('git pull origin '+config.gits[i].branch, {cwd: config.gits[i].dir}, function(error, stdout, stderr){
+			console.log( {error: error, stdout: stdout, stderr: stderr } );
+		});
 		res.send("pikachu");
 	});
 };
